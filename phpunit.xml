@@ -1,0 +1,9 @@
+<phpunit
+        bootstrap="vendor/autoload.php"
+        backupGlobals="false">
+    <testsuites>
+        <testsuite name="readers-writes-lock">
+            <directory>test</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

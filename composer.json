@@ -1,0 +1,38 @@
+{
+  "name": "polderknowledge/readers-writer-lock",
+  "type": "library",
+  "description": "A wrapper around flock() to provide an interprocess readers writer lock",
+  "keywords": [
+    "polderknowledge",
+    "phpsettings-module",
+    "settings",
+    "ini",
+    "config"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Polder Knowledge",
+      "homepage": "https://polderknowledge.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "PolderKnowledge\\ReadersWriterLock\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "PolderKnowledge\\ReadersWriterLockTest\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.2"
+  }
+}
