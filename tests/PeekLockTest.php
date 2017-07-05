@@ -1,9 +1,9 @@
 <?php
 
-namespace PolderKnowledgeTest;
+namespace PolderKnowledgeTest\PeekLock;
 
 use PHPUnit\Framework\TestCase;
-use PolderKnowledge\ReadersWriterLock\PeekLock;
+use PolderKnowledge\PeekLock\PeekLock;
 
 class PeekLockTest extends TestCase
 {

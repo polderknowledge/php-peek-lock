@@ -1,7 +1,7 @@
 {
-  "name": "polderknowledge/readers-writer-lock",
+  "name": "polderknowledge/php-peek-lock",
   "type": "library",
-  "description": "A wrapper around flock() to provide an interprocess readers writer lock",
+  "description": "A wrapper around flock() to provide an interprocess lock",
   "keywords": [
     "polderknowledge",
     "phpsettings-module",
@@ -21,12 +21,12 @@
   },
   "autoload": {
     "psr-4": {
-      "PolderKnowledge\\ReadersWriterLock\\": "src/"
+      "PolderKnowledge\\PeekLock\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "PolderKnowledge\\ReadersWriterLockTest\\": "tests/"
+      "PolderKnowledge\\PeekLockTest\\": "tests/"
     }
   },
   "scripts": {

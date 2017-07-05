@@ -2,8 +2,8 @@
         bootstrap="vendor/autoload.php"
         backupGlobals="false">
     <testsuites>
-        <testsuite name="readers-writes-lock">
-            <directory>test</directory>
+        <testsuite name="peek-lock">
+            <directory>tests</directory>
         </testsuite>
     </testsuites>
 </phpunit>

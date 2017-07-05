@@ -1,6 +1,6 @@
 <?php
 
-namespace PolderKnowledge\ReadersWriterLock;
+namespace PolderKnowledge\PeekLock;
 
 class PeekLock
 {
