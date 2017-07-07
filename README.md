@@ -7,9 +7,9 @@
 [![Quality Score][ico-code-quality]][link-code-quality]
 [![Total Downloads][ico-downloads]][link-downloads]
 
-A PHP library which acts as a wrapper around flock()
+A PHP class which wraps flock()
 
-You can use this to run jobs in the background and peek from the webserver if they are still running.
+You can use this to run jobs in the background and peek from the webserver if they are running.
 
 ## Install
 
@@ -21,7 +21,15 @@ $ composer require polderknowledge/php-peek-lock
 
 ## Usage
 
-Please read the documentation for this package for a quick setup.
+```php
+// lock the file in a job to prevent race conditions between jobs:
+$lock = new PeekLock('mylockfile.txt');
+$lock->blockTillLock();
+
+// check if the job is running from the webpage
+$lock = new PeekLock('mylockfile.txt');
+echo 'busy? ' $lock->isLocked() ? 'yes' : 'no';
+```
 
 ## Change log
 
