@@ -43,7 +43,7 @@ final class PeekLock
             throw new InvalidFileException('Filename is required to create a lock');
         }
 
-        $fileHandle = fopen($path, 'r');
+        $fileHandle = fopen($path, 'c');
         if (!$fileHandle) {
             throw new InvalidFileException('Could not open file to create lock: ' . $path);
         }
