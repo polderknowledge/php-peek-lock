@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<ruleset name="polderknowledge/php-peek-lock">
+    <description>The coding standards of polderknowledge/php-peek-lock</description>
+
+    <rule ref="vendor/polderknowledge/coding-standards/PolderKnowledge/ruleset.xml">
+    </rule>
+</ruleset>

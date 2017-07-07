@@ -1,4 +1,11 @@
 <?php
+/**
+ * Polder Knowledge / php-peek-lock (https://polderknowledge.com)
+ *
+ * @link https://github.com/polderknowledge/php-peek-lock for the canonical source repository
+ * @copyright Copyright (c) 2017 Polder Knowledge (https://polderknowledge.com)
+ * @license https://github.com/polderknowledge/php-peek-lock/blob/master/LICENSE.md MIT
+ */
 
 namespace PolderKnowledgeTest\PeekLock;
 
@@ -7,6 +14,21 @@ use PolderKnowledge\PeekLock\PeekLock;
 
 class PeekLockTest extends TestCase
 {
+    /**
+     * @expectedException \PolderKnowledge\PeekLock\Exception\InvalidFileException
+     */
+    public function testInvalidFileThrowsException()
+    {
+        // Arrange
+        $path = 'invalid';
+
+        // Act
+        $peekLock = new PeekLock($path);
+
+        // Assert
+        // ...
+    }
+
     public function testPeek()
     {
         $pid = pcntl_fork();
