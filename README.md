@@ -28,7 +28,7 @@ $lock->blockTillLock();
 
 // check if the job is running from the webpage
 $lock = new PeekLock('mylockfile.txt');
-echo 'busy? ' $lock->isLocked() ? 'yes' : 'no';
+echo 'busy? ' . ($lock->isLocked() ? 'yes' : 'no');
 ```
 
 ## Change log
